@@ -16,6 +16,26 @@ $(function() {
     $(this).addClass("open");
   });
 
+  $(document).on("click", ".xp_window_btn_maximize", function(e) {
+    e.stopPropagation();
+    $(this).parents(".xp_window").css({
+      'width': '100vw',
+      'height': 'calc(100vh - 30px)',
+      'top': 0,
+      'left': 0
+    });
+  });
+
+  $(document).on("click", ".xp_window_btn_minimize", function(e) {
+    e.stopPropagation();
+    $(this).parents(".xp_application").removeClass("open");
+  });
+
+  $(document).on("click", ".xp_window_btn_close", function(e) {
+    e.stopPropagation();
+    $(this).parents(".xp_application").removeClass("open").find(".xp_window").prop("style", false);
+  });
+
   $(document).click(function() {
     $(".xp_startmenu").removeClass("open");
   });

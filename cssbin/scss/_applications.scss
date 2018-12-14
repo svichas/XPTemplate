@@ -27,6 +27,39 @@
   }
 }
 
+.xp_window_btn_minimize,
+.xp_window_btn_maximize,
+.xp_window_btn_close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+}
+.xp_window_btn_minimize {
+  right: 52px;
+  background-image: url('../imgbin/ui/minimize_icon.png');
+  &:hover {
+    background-image: url('../imgbin/ui/minimize_icon_hover.png');
+  }
+}
+.xp_window_btn_maximize {
+  right: 29px;
+  background-image: url('../imgbin/ui/maximize_icon.png');
+  &:hover {
+    background-image: url('../imgbin/ui/maximize_icon_hover.png');
+  }
+}
+.xp_window_btn_close {
+  right: 6px;
+  background-image: url('../imgbin/ui/close_icon.png');
+  &:hover {
+    background-image: url('../imgbin/ui/close_icon_hover.png');
+  }
+}
+
 
 .xp_application_title {
   color: #fff;
@@ -73,7 +106,6 @@
   padding-right: 3px;
   padding-bottom: 4px;
   position: relative;
-  background-image: url('../imgbin/ui/window_side_bottom.png');
   &:before {
     content: "";
     background-image: url('../imgbin/ui/window_side_left.png');
@@ -103,4 +135,33 @@
   width: 500px;
   height: 500px;
   display: none;
+}
+
+
+
+
+
+
+// ie
+.xp_ie_search {
+  height: 10%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  input {
+    width: 100%;
+  }
+}
+
+.xp_ie_iframe {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  height: 90%;
 }
