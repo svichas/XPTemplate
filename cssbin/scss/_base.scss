@@ -1,9 +1,41 @@
-
-.cred {
-  color: red;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
 
-.tre {
-  color: blue;
+.xp_background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c0c0c0;
+  background-image: url('../imgbin/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.xp_start_btn {
+  width: 102px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url('../imgbin/start_button.png');
+  cursor: pointer;
+  border: 0;
+  appearance: 0;
+  outline: 0;
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 59px;
+  }
+  &:active {
+    background-position: 0 29px;
+  }
 }
