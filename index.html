@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="cssbin/jquery-ui.min.css">
   <link rel="stylesheet" href="cssbin/core.min.css">
+
   <title>XP template</title>
+
+  <script src="jsbin/jquery-3.3.1.min.js"></script>
+  <script src="jsbin/jquery-ui.min.js"></script>
   <script src="jsbin/core.js"></script>
 </head>
 <body>
@@ -15,7 +21,7 @@
 
     <div class="xp_background"></div>
 
-    <div class="xp_applications" onclick="closeStartMenu()">
+    <div class="xp_applications">
       <div class="xp_application">
         <img src="imgbin/applications/ie.png" alt="">
         <div class="xp_application_title">Internet Explorer</div>
@@ -25,10 +31,20 @@
 
           </div>
           <div class="xp_window_content">
+
             <iframe src="https://vichas.org/" frameborder="0" width="100%" height="100%"></iframe>
           </div>
         </div>
 
+      </div>
+      <div class="xp_application">
+        <img src="imgbin/applications/mycomputer.png" alt="">
+        <div class="xp_application_title">My computer</div>
+      </div>
+
+      <div class="xp_application">
+        <img src="imgbin/applications/my_documents.png" alt="">
+        <div class="xp_application_title">My documents</div>
       </div>
 
     </div>
@@ -37,12 +53,13 @@
 
       <div class="xp_startmenu" role="dialog">
         <header>
-          <img src="" alt="">
+          <img src="imgbin/user/user.png" alt="">
+          <h2>Developers developers developers...</h2>
         </header>
 
       </div>
 
-      <button class="xp_start_btn" onclick="toggleStartMenu()"></button>
+      <button class="xp_start_btn"></button>
 
       <div class="xp_bottom_bar_clock">
         <button class="xp_system_tray_arrow"></button>

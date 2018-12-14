@@ -44,6 +44,23 @@
   &.open {
     display: inline-block;
   }
+
+  header {
+    img {
+      position: absolute;
+      top: 10px;
+      left: 9px;
+      width: 48px;
+    }
+    h2 {
+      position: absolute;
+      left: 69px;
+      top: 7px;
+      font-size: 18px;
+      color: #ffff;
+      font-weight: normal;
+    }
+  }
 }
 
 .xp_bottom_bar_clock {
