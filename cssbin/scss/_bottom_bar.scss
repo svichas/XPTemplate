@@ -5,6 +5,28 @@
   height: 30px;
   position: absolute;
   background-image: url('../imgbin/taskbar.png');
+  background-repeat: repeat;
+}
+
+.xp_start_btn {
+  width: 102px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url('../imgbin/start_button.png');
+  cursor: pointer;
+  border: 0;
+  appearance: 0;
+  outline: 0;
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 59px;
+  }
+  &:active {
+    background-position: 0 29px;
+  }
 }
 
 
@@ -21,4 +43,38 @@
   &.open {
     display: inline-block;
   }
+}
+
+.xp_bottom_bar_clock {
+  position: absolute;
+  right: 0;
+  min-width: 50px;
+  height: 30px;
+  bottom: 0;
+  background-repeat: repeat;
+  padding: 0 20px;
+  background-image: url('../imgbin/clock.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.xp_system_tray_arrow {
+  cursor: pointer;
+  position: absolute;
+  left: -21px;
+  border: 0;
+  appearance: 0;
+  outline: 0;
+  bottom: 0;
+  background-image: url('../imgbin/system_tray_arrow.png');
+  height: 30px;
+  width: 21px;
+}
+
+
+.xp_bottom_bar_time {
+  font-size: 12px;
+  color: #fff;
 }

@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
 .xp_background {
@@ -17,25 +18,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.xp_start_btn {
-  width: 102px;
-  height: 30px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url('../imgbin/start_button.png');
-  cursor: pointer;
-  border: 0;
-  appearance: 0;
-  outline: 0;
-  background-position: 0 0;
-
-  &:hover {
-    background-position: 0 59px;
-  }
-  &:active {
-    background-position: 0 29px;
-  }
 }
