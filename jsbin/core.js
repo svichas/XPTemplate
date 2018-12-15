@@ -48,7 +48,10 @@ $(function() {
     $(".xp_startmenu").removeClass("open");
   });
 
-  $(".xp_window").draggable().resizable();
+  $(".xp_window").draggable().resizable({
+    minHeight: 300,
+    minWidth: 300
+  });
 
   setTime();
   setInterval(setTime, 1000);
