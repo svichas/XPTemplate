@@ -13,12 +13,14 @@ $(function() {
   });
 
   $(document).on("click", ".xp_application", function(e) {
-    $(this).addClass("open");
+    $(".xp_window").removeClass("focus");
+    $(this).addClass("open").find('.xp_window').addClass('focus');
   });
 
   $(document).on("click", ".xp_window_btn_maximize", function(e) {
     e.stopPropagation();
-    $(this).parents(".xp_window").css({
+    $(".xp_window").removeClass("focus");
+    $(this).parents(".xp_window").addClass('focus').css({
       'width': '100vw',
       'height': 'calc(100vh - 30px)',
       'top': 0,
@@ -34,6 +36,12 @@ $(function() {
   $(document).on("click", ".xp_window_btn_close", function(e) {
     e.stopPropagation();
     $(this).parents(".xp_application").removeClass("open").find(".xp_window").prop("style", false);
+  });
+
+  $(document).on("click", ".xp_window_topbar", function(e) {
+    e.stopPropagation();
+    $(".xp_window").removeClass("focus");
+    $(this).parents(".xp_window").addClass('focus');
   });
 
   $(document).click(function() {

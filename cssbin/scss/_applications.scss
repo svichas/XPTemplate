@@ -19,7 +19,6 @@
     width: 32px;
   }
 
-
   &.open {
     .xp_window {
       display: inline-block;
@@ -106,6 +105,9 @@
   padding-right: 3px;
   padding-bottom: 4px;
   position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
   &:before {
     content: "";
     background-image: url('../imgbin/ui/window_side_left.png');
@@ -115,6 +117,7 @@
     top: 0;
     height: 100%;
     width: 3px;
+    border-radius: 0 0 3px 0;
   }
   &:after {
     content: "";
@@ -125,6 +128,7 @@
     top: 0;
     height: 100%;
     width: 3px;
+    border-radius: 0 0 0 3px;
   }
 }
 
@@ -135,6 +139,19 @@
   width: 500px;
   height: 500px;
   display: none;
+  z-index: 10;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    background-image: url('../imgbin/ui/window_side_bottom.png');
+  }
+  &.focus {
+    z-index: 1000;
+  }
 }
 
 
