@@ -6,8 +6,9 @@
   "license": "GNU gplv3",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-rename": "^1.2.2",
-    "pump": "^3.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "pump": "^3.0.0"
   }
 }
