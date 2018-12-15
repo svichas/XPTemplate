@@ -36,10 +36,12 @@ $(function() {
       'left': 0
     });
   });
-  //xp_window_topbar_title_text
+
   $(document).on("click", ".xp_window_topbar_title", function(e) {
     e.stopPropagation();
     var apid = $(this).find(".xp_window_topbar_title_text").html();
+
+    $(".xp_window").removeClass("focus")
 
     $(".xp_application[data-apid='"+apid+"']").addClass("open")
     .find(".xp_window").addClass("focus");
