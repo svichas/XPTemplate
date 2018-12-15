@@ -98,6 +98,24 @@
   }
 }
 
+.xp_window_topbar_title {
+  position: absolute;
+  left: 7px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  .xp_window_topbar_icon {
+    width: 16px;
+  }
+}
+
+.xp_window_topbar_title_text {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-top: 3px;
+  text-shadow: 0px 0px 2px #222;
+}
 
 .xp_window_content {
   height: calc(100% - 30px);
